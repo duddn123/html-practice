@@ -3,7 +3,8 @@
 }
 
 body {
-  height: 95vh;
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,18 +15,75 @@ body {
   border: none;
   border-bottom: 1px solid black;
   margin-top: 30px;
-  padding: 30px 20px;
+  padding: 20px 20px;
   font-size: 30px;
 }
 
 #login-form input:focus {
   outline: none;
+  text-align: center;
 }
 
 .login-question {
   font-size: 50px;
 }
 
+@keyframes fadeout {
+  from {
+    visibility: inherit;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
 #greeting {
+  font-size: 45px;
+  animation: fadeout 1.5s ease-in-out forwards;
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 350px;
+}
+
+.note {
+  background-color: rgb(206, 206, 206);
+  padding: 50vh 50vw;
+  position: relative;
+  z-index: 1;
+}
+
+.note__column:last-child {
+  background-color: rgb(161, 161, 161);
+  padding: 30px 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 10px;
+  top: 10px;
+  height: 535px;
+}
+
+.note__column__your-note {
   font-size: 40px;
+}
+
+.note__column:first-child {
+  background-color: rgb(180, 180, 180);
+  padding: 50px 250px;
+  height: 495px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.your-note__button {
+  border: none;
+  padding: 10px 30px;
+  margin: 20px 0px;
+  font-size: 17px;
+}
+
+.your-note__button:hover {
+  background-color: #fff;
 }

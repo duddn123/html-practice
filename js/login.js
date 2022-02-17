@@ -2,10 +2,14 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input"); 
 const greeting = document.querySelector("#greeting");
 const loginQuestion = document.querySelector(".login-question");
+const note = document.querySelector(".note");
 
 CLASS_NAME__HIDDEN = "hidden";
 USERNAME_KEY = "username";
 
+function handleNote(){
+    note.classList.remove("hidden");
+}
 
 function handleLogin(event){
     event.preventDefault();
@@ -14,6 +18,7 @@ function handleLogin(event){
     loginForm.remove();
     loginQuestion.remove();
     paintGreeting(userName);
+    handleNote();
 }
 
 function paintGreeting(userName){
@@ -30,5 +35,5 @@ if(savedUserName === null){
     loginForm.addEventListener("submit", handleLogin);
 }
 else{
-    paintGreeting(savedUserName);
+    handleNote();
 }
