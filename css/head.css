@@ -1,0 +1,27 @@
+.head {
+  position: fixed;
+  margin: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.head a {
+  color: white;
+  text-decoration: none;
+}
+
+.head__title {
+  margin-left: 150px;
+  font-size: 30px;
+}
+
+.head__column {
+  margin-right: 200px;
+}
+
+.head__link {
+  margin: 0 20px;
+  font-size: 20px;
+}

@@ -4,48 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Note web</title>
+    <title>COMP-WEB</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="login-question , hidden">What's your name?</div>
-    <form id="login-form" class="hidden">
-      <input type="text" required />
-    </form>
+    <div class="cover">
+      <video autoplay loop muted id="background-video">
+        <source src="typing.mp4" type="video/mp4" />
+      </video>
+    </div>
 
-    <div id="greeting" class="hidden"></div>
-
-    <div class="note hidden">
-      <div class="note__column">
-        <form class="note__column__form">
-          <input
-            class="note__column__form__input"
-            type="text"
-            placeholder="Enter a title..."
-          />
-          <textarea class="note__column__form__text">
-this is the note text</textarea
-          >
-        </form>
-      </div>
-
-      <div class="note__column">
-        <div class="note__column__your-note">your note</div>
-        <div class="your-note">
-          <button class="your-note__button" type="botton">Add Note</button>
-          <div class="note-block">
-            <div class="your-note__title">something</div>
-            <div class="your-note__middle">alalallalala</div>
-            <div class="your-note__date">2022. 2. 16</div>
-          </div>
-        </div>
+    <div class="head">
+      <a class="head__title" href="index.html"><strong>COMP</strong></a>
+      <div class="head__column">
+        <a class="head__link" href="#">MEMBER</a>
+        <a class="head__link" href="#">WHAT TO DO</a>
+        <a class="head__link" href="#">CONTACT</a>
       </div>
     </div>
 
+    <div class="main">
+      <div class="main__column">
+        <h1>WE ARE <span class="main__column-style">COMP</span></h1>
+      </div>
+      <div class="main__column">
+        <span>SCROLL DOWN</span>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/acab0da460.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/login.js"></script>
-    <script src="js/note.js"></script>
   </body>
 </html>
-
-<!-- 로그인 하면 이름 뜨면서 노트 활성화
-    노트 기능, 노트 보관 기능-->
