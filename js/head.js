@@ -1,5 +1,9 @@
 const head = document.querySelector(".head");
 
-function handleColor(){}
 
-head.addEventListener("scroll", handleColor);
+
+function handleHead(){
+    document.getElementById("head").style.backgroundColor = 
+}
+
+head.addEventListener("click" , handleHead);
