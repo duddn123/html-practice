@@ -1,5 +1,4 @@
 .main {
-  position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
@@ -15,22 +14,36 @@
   align-items: center;
 }
 
-.main h1 {
+.main h1,
+.main h1 > span {
   font-size: 70px;
   margin-bottom: 100px;
 }
 
 .main span {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main__column > h1 > span {
+  background-color: #3270fb;
+  padding: 0 20px;
 }
 
 .main i {
   font-size: 25px;
-  margin-top: 50px;
+  margin-top: 30px;
+  animation: angleanimation 1s linear infinite;
 }
 
-.main__column-style {
-  background-color: #3270fb;
-  padding: 0 20px;
+@keyframes angleanimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: none;
+  }
 }
